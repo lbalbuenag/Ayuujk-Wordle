@@ -22,7 +22,7 @@ export const ORTHOGRAPHY = [
 "l",
 "r",
 "s",
-"Ꞌ",
+"'",
 ]
 
 if (CONFIG.normalization) {
