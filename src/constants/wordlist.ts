@@ -1,7 +1,7 @@
 import { CONFIG } from './config'
 
 export const WORDS = [
-"kaaky","nitky","kë'xp","wääjx","tiixy","käjpy","xejty","kutpy","ko'on","yuu'n","katsy","kujup","najan","kujan","kë'ëk","xuumy"
+"kaaky","nitky","kë'xp","wääjx","tiixy","käjpy","xejty","kutpy","ko'on","yuu'n","kujup","najan","kujan","kë'ëk","xuumy"
 ]
 
 if (CONFIG.normalization) {
