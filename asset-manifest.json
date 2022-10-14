@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ayuujk-Wordle/static/css/main.a03a8de1.css",
-    "main.js": "/Ayuujk-Wordle/static/js/main.95856dfe.js",
+    "main.js": "/Ayuujk-Wordle/static/js/main.21a00226.js",
     "static/js/787.83383e6c.chunk.js": "/Ayuujk-Wordle/static/js/787.83383e6c.chunk.js",
     "static/media/BCSans-Bold.woff": "/Ayuujk-Wordle/static/media/BCSans-Bold.252ecf87ea37c93b293c.woff",
     "static/media/BCSans-BoldItalic.woff": "/Ayuujk-Wordle/static/media/BCSans-BoldItalic.73ed5137b2c4a42b754f.woff",
@@ -10,11 +10,11 @@
     "index.html": "/Ayuujk-Wordle/index.html",
     "static/media/getFetch.cjs": "/Ayuujk-Wordle/static/media/getFetch.c780682470504fffbd04.cjs",
     "main.a03a8de1.css.map": "/Ayuujk-Wordle/static/css/main.a03a8de1.css.map",
-    "main.95856dfe.js.map": "/Ayuujk-Wordle/static/js/main.95856dfe.js.map",
+    "main.21a00226.js.map": "/Ayuujk-Wordle/static/js/main.21a00226.js.map",
     "787.83383e6c.chunk.js.map": "/Ayuujk-Wordle/static/js/787.83383e6c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a03a8de1.css",
-    "static/js/main.95856dfe.js"
+    "static/js/main.21a00226.js"
   ]
 }
