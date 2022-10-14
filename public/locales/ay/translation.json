@@ -12,7 +12,7 @@
     "pickYourLanguage": "WïꞋejx jë mꞋayuujk",
     "correctSpotInstructions": "KaꞋpxy yë T të xkujayï.",
     "wrongSpotInstructions": "Jaa jajp yë P, yaꞋyï apiky nyijkxy.",
-    "notInWordInstructions": "KaꞋts yë A tee.",
+    "notInWordInstructions": "KaꞋts yë X tee.",
     "guessDistribution": "Distribución de aciertos",
     "statistics": "Estadísticas",
     "totalTries": "Jugadas",
@@ -73,19 +73,19 @@
             "highlight": false
         },
         {
-            "letter": "U",
+            "letter": "Ë",
             "highlight": false
         },
         {
-            "letter": "J",
+            "letter": "Ꞌ",
             "highlight": false
         },
         {
-            "letter": "A",
+            "letter": "X",
             "highlight": true
         },
         {
-            "letter": "N",
+            "letter": "P",
             "highlight": false
         }
     ],
