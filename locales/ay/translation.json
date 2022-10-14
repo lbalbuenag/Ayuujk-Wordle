@@ -1,18 +1,18 @@
 {
-    "about": "Acerca de este juego",
+    "about": "Tii yäꞋät kuyaty",
     "gameName": "No Wordle - {{language}}",
     "enterKey": "Kax",
     "deleteKey": "PoꞋot",
-    "notEnoughLetters": "No hay suficientes letras",
-    "wordNotFound": "Palabra no encontrada",
+    "notEnoughLetters": "Jaakkujayï",
+    "wordNotFound": "KaꞋp yëꞋëpë ayuujk yïkpääty",
     "solution": "La palabra era {{solution}}",
     "gameCopied": "Juego copiado al portapapeles",
-    "howToPlay": "Cómo jugar",
-    "instructions": "Adivina la palabra en {{tries}} intentos. Después de cada intento, el color de las letras cambiará para mostrar qué tan cerca estás de acertar la palabra.",
-    "pickYourLanguage": "Elige un idioma",
-    "correctSpotInstructions": "La letra T se encuentra en la palabra y está en la posición correcta.",
-    "wrongSpotInstructions": "La letra N se encuentra en la palabra pero en la posición incorrecta.",
-    "notInWordInstructions": "La letra O no se encuentra en la palabra.",
+    "howToPlay": "Sutsoo mkuyätt",
+    "instructions": "ïxäꞋ {{tries}} oojk ja ayuujk. Ku tuꞋuk'oojk xtanïꞋejxt, tïkätsp yë tajaaky jë y'uky jïts jateꞋn xnajäwït pïnë mpäätwännïp ja ayuujk.",
+    "pickYourLanguage": "WïꞋejx jë mꞋayuujk",
+    "correctSpotInstructions": "KaꞋpxy yë T të xkujayï.",
+    "wrongSpotInstructions": "Jaa jajp yë P, yaꞋyï apiky nyijkxy.",
+    "notInWordInstructions": "KaꞋts yë A tee.",
     "guessDistribution": "Distribución de aciertos",
     "statistics": "Estadísticas",
     "totalTries": "Jugadas",
@@ -31,61 +31,61 @@
             "highlight": true
         },
         {
-            "letter": "R",
+            "letter": "I",
+            "highlight": false
+        },
+        {
+            "letter": "I",
+            "highlight": false
+        },
+        {
+            "letter": "X",
+            "highlight": false
+        },
+        {
+            "letter": "Y",
+            "highlight": false
+        }
+    ],
+    "secondExampleWord": [{
+            "letter": "J",
             "highlight": false
         },
         {
             "letter": "A",
+            "highlight": false
+        },
+        {
+            "letter": "P",
+            "highlight": true
+        },
+        {
+            "letter": "O",
             "highlight": false
         },
         {
             "letter": "M",
             "highlight": false
-        },
-        {
-            "letter": "O",
-            "highlight": false
-        }
-    ],
-    "secondExampleWord": [{
-            "letter": "G",
-            "highlight": false
-        },
-        {
-            "letter": "A",
-            "highlight": false
-        },
-        {
-            "letter": "N",
-            "highlight": true
-        },
-        {
-            "letter": "A",
-            "highlight": false
-        },
-        {
-            "letter": "S",
-            "highlight": false
         }
     ],
     "thirdExampleWord": [{
-            "letter": "R",
+            "letter": "K",
             "highlight": false
         },
         {
-            "letter": "E",
+            "letter": "U",
             "highlight": false
         },
         {
-            "letter": "T",
+            "letter": "J",
             "highlight": false
         },
         {
-            "letter": "O",
+            "letter": "A",
             "highlight": true
         },
         {
-            "letter": "S",
+            "letter": "N",
             "highlight": false
         }
     ],
