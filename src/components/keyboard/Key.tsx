@@ -41,7 +41,7 @@ export const Key = ({
       className={classes}
       onClick={handleClick}
     >
-      {children || value}
+      {children || value.toUpperCase()}
     </button>
   )
 }
