@@ -5,7 +5,7 @@ export const CONFIG = {
   author: 'lbalbuenag', // Put your name here so people know who made this Wordle!
   authorWebsite: 'http://ayuujkjaaky.tlahuitoltepec.com/', // Put a link to your website or social media here
   wordListSource: 'Appyuujk', // Describe the source material for your words here
-  wordListSourceLink: 'http://ayuujkjaaky.tlahuitoltepec.com/index.php/ahorcado', // Put a link to the source material for your words here
+  wordListSourceLink: 'http://ayuujkjaaky.tlahuitoltepec.com/ayuujk_assets/js/wordle.js', // Put a link to the source material for your words here
   //
   // THESE NEXT SETTINGS ARE FOR ADVANCED USERS
   //
