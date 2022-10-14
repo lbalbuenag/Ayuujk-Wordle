@@ -21,6 +21,7 @@ import ReactGA from 'react-ga'
 import '@bcgov/bc-sans/css/BCSans.css'
 import './i18n'
 import { withTranslation, WithTranslation } from 'react-i18next'
+import Div100vh from 'react-div-100vh'
 
 const ALERT_TIME_MS = 2000
 
@@ -144,71 +145,75 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
     )
   }
 
-  return (
-    <div className="py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <div className="flex w-80 mx-auto items-center mb-8">
+    return (
+    <Div100vh>
+      <div className="flex h-full flex-col">
         <h1 className="text-xl grow font-bold">
           {t('gameName', { language: CONFIG.language })}
         </h1>
         {translateElement}
-        <InformationCircleIcon
-          className="h-6 w-6 cursor-pointer"
-          onClick={() => setIsInfoModalOpen(true)}
+        <Navbar
+          setIsInfoModalOpen={setIsInfoModalOpen}
+          setIsStatsModalOpen={setIsStatsModalOpen}
+          setIsI18nModalOpen={setIsI18nModalOpen}
+          //setIsDatePickerModalOpen={setIsDatePickerModalOpen}
+          //setIsSettingsModalOpen={setIsSettingsModalOpen}
         />
-        <ChartBarIcon
-          className="h-6 w-6 cursor-pointer"
-          onClick={() => setIsStatsModalOpen(true)}
-        />
+
+        <div className="mx-auto flex w-full grow flex-col px-1 pt-2 pb-8 sm:px-6 md:max-w-7xl lg:px-8 short:pb-2 short:pt-2">
+          <div className="flex grow flex-col justify-center pb-6 short:pb-2">
+            <Grid guesses={guesses} currentGuess={currentGuess} />
+          </div>
+          <Keyboard
+            onChar={onChar}
+            onDelete={onDelete}
+            onEnter={onEnter}
+            guesses={guesses}
+          />
+          <TranslateModal
+            isOpen={isI18nModalOpen}
+            handleClose={() => setIsI18nModalOpen(false)}
+          />
+          <InfoModal
+            isOpen={isInfoModalOpen}
+            handleClose={() => setIsInfoModalOpen(false)}
+          />
+          <StatsModal
+            isOpen={isStatsModalOpen}
+            handleClose={() => setIsStatsModalOpen(false)}
+            guesses={guesses}
+            gameStats={stats}
+            isGameLost={isGameLost}
+            isGameWon={isGameWon}
+            handleShare={() => {
+              setSuccessAlert(t('gameCopied'))
+              return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
+            }}
+          />
+          <AboutModal
+            isOpen={isAboutModalOpen}
+            handleClose={() => setIsAboutModalOpen(false)}
+          />
+
+          <button
+            type="button"
+            className="mx-auto mt-8 flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 select-none"
+            onClick={() => setIsAboutModalOpen(true)}
+          >
+            {t('about')}
+          </button>
+
+          <Alert message={t('notEnoughLetters')} isOpen={isNotEnoughLetters} />
+          <Alert message={t('wordNotFound')} isOpen={isWordNotFoundAlertOpen} />
+          <Alert message={t('solution', { solution })} isOpen={isGameLost} />
+          <Alert
+            message={successAlert}
+            isOpen={successAlert !== ''}
+            variant="success"
+          />
+        </div>
       </div>
-      <Grid guesses={guesses} currentGuess={currentGuess} />
-      <Keyboard
-        onChar={onChar}
-        onDelete={onDelete}
-        onEnter={onEnter}
-        guesses={guesses}
-      />
-      <TranslateModal
-        isOpen={isI18nModalOpen}
-        handleClose={() => setIsI18nModalOpen(false)}
-      />
-      <InfoModal
-        isOpen={isInfoModalOpen}
-        handleClose={() => setIsInfoModalOpen(false)}
-      />
-      <StatsModal
-        isOpen={isStatsModalOpen}
-        handleClose={() => setIsStatsModalOpen(false)}
-        guesses={guesses}
-        gameStats={stats}
-        isGameLost={isGameLost}
-        isGameWon={isGameWon}
-        handleShare={() => {
-          setSuccessAlert(t('gameCopied'))
-          return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
-        }}
-      />
-      <AboutModal
-        isOpen={isAboutModalOpen}
-        handleClose={() => setIsAboutModalOpen(false)}
-      />
-
-      <button
-        type="button"
-        className="mx-auto mt-8 flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 select-none"
-        onClick={() => setIsAboutModalOpen(true)}
-      >
-        {t('about')}
-      </button>
-
-      <Alert message={t('notEnoughLetters')} isOpen={isNotEnoughLetters} />
-      <Alert message={t('wordNotFound')} isOpen={isWordNotFoundAlertOpen} />
-      <Alert message={t('solution', { solution })} isOpen={isGameLost} />
-      <Alert
-        message={successAlert}
-        isOpen={successAlert !== ''}
-        variant="success"
-      />
-    </div>
+    </Div100vh>
   )
 }
 

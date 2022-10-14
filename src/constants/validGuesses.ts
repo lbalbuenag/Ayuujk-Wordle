@@ -1,7 +1,7 @@
 import { CONFIG } from './config'
 
 export const VALIDGUESSES = [
-"kaaky","nitky","kë'xp","wääjx","tiixy","käjpy","xejty","kutpy","ko'on","yuu'n","kujup","najan","kujan","kë'ëk","xuumy","japom","kiixy","nëjkx"
+"kaaky","nitky","kë'xp","wääjx","tiixy","käjpy","xejty","kutpy","ko'on","yuu'n","kujup","najan","kujan","kë'ëk","xuumy","japom","kiixy","nëjkx","këjxp"
 ]
 
 if (CONFIG.normalization) {
