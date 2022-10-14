@@ -135,7 +135,7 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
       }
     }
   }
-  let translateElement = <div></div>
+  /*let translateElement = <div></div>
   if (CONFIG.availableLangs.length > 1) {
     translateElement = (
       <TranslateIcon
@@ -143,7 +143,7 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
         onClick={() => setIsI18nModalOpen(true)}
       />
     )
-  }
+  }*/
 
     return (
     //<Div100vh>
@@ -157,7 +157,7 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
                 onClick={() => setIsInfoModalOpen(true)}
               />
             </div>
-            <p className="text-xl font-bold dark:text-white">{t('gameName', { language: CONFIG.language })} {translateElement}</p>
+            <p className="text-xl font-bold dark:text-white">{t('gameName', { language: CONFIG.language })}</p>
             <div className="right-icons">
               <ChartBarIcon
                 className="mr-3 h-6 w-6 cursor-pointer dark:stroke-white"
