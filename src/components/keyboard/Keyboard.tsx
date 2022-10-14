@@ -35,9 +35,9 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
       }
       // Take away key event listener for now
       else {
-        const key = e.key.toUpperCase()
+        const key = e.key;//
         if (key.length === 1 && ORTHOGRAPHY.indexOf(key) > -1) {
-          onChar(key)
+          onChar(key.toUpperCase())
         }
       }
     }
@@ -67,7 +67,7 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
           Math.floor(ORTHOGRAPHY.length * 0.7)
         ).map((char) => (
           <Key
-            key={char}
+            key={char.toUpperCase()}
             value={char}
             onClick={onClick}
             status={charStatuses[char]}
