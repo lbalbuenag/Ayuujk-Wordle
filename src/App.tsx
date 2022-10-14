@@ -21,7 +21,7 @@ import ReactGA from 'react-ga'
 import '@bcgov/bc-sans/css/BCSans.css'
 import './i18n'
 import { withTranslation, WithTranslation } from 'react-i18next'
-import Div100vh from 'react-div-100vh'
+//import Div100vh from 'react-div-100vh'
 
 const ALERT_TIME_MS = 2000
 
@@ -146,19 +146,31 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
   }
 
     return (
-    <Div100vh>
+    //<Div100vh>
       <div className="flex h-full flex-col">
-        <h1 className="text-xl grow font-bold">
-          {t('gameName', { language: CONFIG.language })}
-        </h1>
-        {translateElement}
-        <Navbar
-          setIsInfoModalOpen={setIsInfoModalOpen}
-          setIsStatsModalOpen={setIsStatsModalOpen}
-          setIsI18nModalOpen={setIsI18nModalOpen}
-          //setIsDatePickerModalOpen={setIsDatePickerModalOpen}
-          //setIsSettingsModalOpen={setIsSettingsModalOpen}
-        />
+        
+        <div className="navbar">
+          <div className="navbar-content px-5 short:h-auto">
+            <div className="flex">
+              <InformationCircleIcon
+                className="h-6 w-6 cursor-pointer dark:stroke-white"
+                onClick={() => setIsInfoModalOpen(true)}
+              />
+            </div>
+            <p className="text-xl font-bold dark:text-white">{t('gameName', { language: CONFIG.language })} {translateElement}</p>
+            <div className="right-icons">
+              <ChartBarIcon
+                className="mr-3 h-6 w-6 cursor-pointer dark:stroke-white"
+                onClick={() => setIsStatsModalOpen(true)}
+              />
+              <TranslateIcon
+                className="h-6 w-6 cursor-pointer dark:stroke-white"
+                onClick={() => setIsI18nModalOpen(true)}
+              />
+            </div>
+          </div>
+          <hr></hr>
+        </div>
 
         <div className="mx-auto flex w-full grow flex-col px-1 pt-2 pb-8 sm:px-6 md:max-w-7xl lg:px-8 short:pb-2 short:pt-2">
           <div className="flex grow flex-col justify-center pb-6 short:pb-2">
@@ -213,7 +225,7 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
           />
         </div>
       </div>
-    </Div100vh>
+    //</Div100vh>
   )
 }
 
