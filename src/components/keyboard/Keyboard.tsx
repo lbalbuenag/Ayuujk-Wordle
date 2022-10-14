@@ -34,12 +34,12 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
         onDelete()
       }
       // Take away key event listener for now
-      // else {
-      //   const key = e.key.toUpperCase()
-      //   if (key.length === 1 && key >= 'A' && key <= 'Z') {
-      //     onChar(key)
-      //   }
-      // }
+      else {
+        const key = e.key.toUpperCase()
+        if (key.length === 1 && ORTHOGRAPHY.indexOf(key)) {
+          onChar(key)
+        }
+      }
     }
     window.addEventListener('keyup', listener)
     return () => {
