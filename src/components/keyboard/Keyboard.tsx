@@ -67,8 +67,8 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
           Math.floor(ORTHOGRAPHY.length * 0.7)
         ).map((char) => (
           <Key
-            key={char.toUpperCase()}
-            value={char}
+            key={char}
+            value={char.toUpperCase()}
             onClick={onClick}
             status={charStatuses[char]}
           />
