@@ -145,7 +145,16 @@ export const VALIDGUESSES = [
 "nïwets",
 "apiky",
 "mujkx",
-"tsïkum"
+"tsïkum",
+"wïtuk",
+"wïtsuk",
+"pëëpy",
+"nïtuk",
+"tamo'",
+"tä'äm",
+"jä'äp",
+"mïku'",
+"jä'äy"
 ]
 
 if (CONFIG.normalization) {
