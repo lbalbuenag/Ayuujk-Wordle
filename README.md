@@ -1,4 +1,4 @@
-# Any-Language Wordle Clone
+# Ayuujk Wordle Clone
 
 ## Changes in this fork
 
