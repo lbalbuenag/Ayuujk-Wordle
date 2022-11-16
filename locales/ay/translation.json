@@ -1,6 +1,6 @@
 {
     "about": "Tii yäꞋät kuyꞋaty",
-    "gameName": "No Wordle - {{language}}",
+    "gameName": "Wordle - {{language}}",
     "enterKey": "Kax",
     "deleteKey": "PoꞋot",
     "notEnoughLetters": "Jaakkujayï",
@@ -19,8 +19,8 @@
     "successRate": "TooꞋnïn",
     "currentStreak": "KaꞋ mtïkëy",
     "bestStreak": "KaꞋ mtïkëy jïnëjkx",
-    "newWordCountdown": "YïteꞋnpë et ja wenk ayuujk pyïtsëꞋmt",
-    "share": "YïkpojwäꞋäkx",
+    "newWordCountdown": "Janïm ja wenk ayuujk pyïtsëꞋmt",
+    "share": "YïkpojwäꞋkx",
     "winMessages": [
         "¡Të xmïmajatäꞋäky!",
         "TsyäꞋämpë",
@@ -92,7 +92,7 @@
     "aboutAuthorSentence": "Wordle yäꞋät kuyꞋaty xyëëw, jaꞋts të yïkpaꞋijxy jïts {{language}} të tyïknaxy ja <3>{{author}}</3>. ",
     "aboutCodeSentence": "Ejx ja myïjawyeen <1>pujx wïnmääꞋny</1> mitiꞋ ja <3>Hannah Park</3> ojts tjäꞋäy uk wïꞋejx sää ja <5>Aidan Pine</5> të tyïktïkatsy jïts jë wenk ayuujk xpïktäkmït. ",
     "aboutDataSentence": "Jajp tukiꞋiyï yë ääw ayuujk të tsyëëny <1>{{wordListSource}}</1>. ",
-    "aboutOriginalSentence": "Ëy nayïte'n <1>yää</1> mkuyꞋätt mää ojts tsyoo'ntäꞋäky yäꞋät kuyꞋaty.",
+    "aboutOriginalSentence": "Ëy nayïteꞋn <1>yää</1> mkuyꞋätt mää ojts tsyooꞋntäꞋäky yäꞋät kuyꞋaty.",
     "languages": {
         "ay": "Ayuujk",
         "es": "Español",
