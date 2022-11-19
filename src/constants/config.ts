@@ -13,7 +13,7 @@ export const CONFIG = {
   shuffle: true, // whether to shuffle the words in the wordlist each time you load the app (note: you will lose the 'word of the day' functionality if this is true)
   normalization: 'NFC', // whether to apply Unicode normalization to words and orthography - options: 'NFC', 'NFD', 'NKFC', 'NKFD', false
   startDate: 'January 1, 2022 00:00:00', // what date and time to start your game from
-  defaultLang: 'ay', // the default interface language
-  availableLangs: ['ay', 'es','en', 'sw', 'zh'], // the options available to the user for translation languages
+  defaultLang: 'mxp', // the default interface language
+  availableLangs: ['mxp', 'es','en', 'sw', 'zh'], // the options available to the user for translation languages
   escapeSpecialCharacters: true, // whether to escape all characters in the orthography.
 }

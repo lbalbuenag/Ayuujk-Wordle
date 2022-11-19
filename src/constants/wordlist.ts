@@ -202,7 +202,8 @@ export const WORDS = [
 "patsëm",
 "pojxp",
 "tëëjts",
-"teety"
+"teety",
+"mentë"
 ]
 
 if (CONFIG.normalization) {
